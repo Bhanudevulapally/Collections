@@ -283,7 +283,7 @@ namespace Collections
 //4 praveen
 //5 sai
 //6 ajeeth
-*/
+
     public class SortedlistEx
     {
         public static void Main(string[] args)
@@ -307,4 +307,28 @@ namespace Collections
 //3 ajeeth
 //4 praveen
 //5 sai
+    */
+        public class SortedlistEx
+    {
+        public static void Main(string[] args)
+        {
+            SortedList<string, string> names = new SortedList<string, string>();
+            {
+                names.Add("1", "bhanu");
+                names.Add("bala", "sai");
+                names.Add("3", "ajeeth");
+                names.Add("2", "bala");
+                names.Add("kiran", "praveen");
+                foreach (KeyValuePair<string, string> name in names)
+                {
+                    Console.WriteLine(name.Key + " " + name.Value);
+                }
+            }
+        }
+    }
+    //1 bhanu
+    //2 bala
+    //3 ajeeth
+    //bala sai
+    //kiran praveen
 }
